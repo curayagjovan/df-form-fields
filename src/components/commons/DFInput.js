@@ -6,8 +6,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Controller } from "react-hook-form";
-
-function DFInput({ name, label, control, rules, gutterBottom, ...props }) {
+export const DFInput = ({ name, label, control, rules, gutterBottom, ...props }) => {
   return (
     <Controller
       name={name}
@@ -31,4 +30,3 @@ function DFInput({ name, label, control, rules, gutterBottom, ...props }) {
   );
 }
 
-export default DFInput;
